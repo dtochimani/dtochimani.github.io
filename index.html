@@ -2,31 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <h1 style="font-style: italic;">Daniel Tochimani-Hernandez</h1>
+  <title>Daniel Tochimani-Hernandez</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Load real Times New Roman -->
+  <link href="https://fonts.cdnfonts.com/css/times-new-roman" rel="stylesheet">
+
   <style>
-    body {
+    html, body {
       margin: 0;
       background: black;
       color: #f2f2f2;
       display: flex;
+      font-family: "Times New Roman", serif;
     }
 
- html {
-  font-family: "Times New Roman", Times, serif;
-}
+    h1, h2, p, a, div {
+      font-family: "Times New Roman", serif;
+    }
 
-body {
-  font-family: "Times New Roman", Times, serif;
-  margin: 0;
-  background: black;
-  color: #f2f2f2;
-  display: flex;
-}
-
-h1, h2, h3, p, a, div {
-  font-family: "Times New Roman", Times, serif !important;
-}   
     /* MAIN CONTENT */
     .main {
       padding: 60px;
@@ -38,12 +32,16 @@ h1, h2, h3, p, a, div {
       margin-bottom: 10px;
     }
 
+    h2 {
+      margin-top: 40px;
+    }
+
     p {
       font-size: 18px;
       line-height: 1.6;
     }
 
-    /* IMAGE */
+    /* PROFILE IMAGE */
     .profile-photo {
       margin-top: 30px;
       width: 250px;
@@ -97,31 +95,31 @@ h1, h2, h3, p, a, div {
     }
   </style>
 </head>
+
 <body>
 
-  <!-- MAIN PAGE -->
+  <!-- MAIN CONTENT -->
   <div class="main">
     <h1>Daniel Tochimani-Hernandez</h1>
     <p><strong>Economics</strong></p>
 
     <p>
-      I primarily specialize in econometrics and micro economics.
+      I primarily specialize in econometrics and microeconomics.
     </p>
 
     <h2>About Me</h2>
     <p>
-      If I am not studying or working on research, I love to play card games and spend my time either swimming or rock climbing.<br>
-      In many ways, the work I do mirrors my personal interests, ranging from the variance I encounter in playing Magic: The Gathering to the variance evident in public health disparities.<br>
+      If I am not studying or working on research, I love to play card games and spend my time either swimming or rock climbing.
+      In many ways, the work I do mirrors my personal interests, ranging from the variance I encounter in playing Magic: The Gathering
+      to the variance evident in public health disparities.
     </p>
 
-    <!-- Photo -->
-    <img src="profilepic.jpg" alt="Photo" class="profile-photo">
+    <img src="profilepic.jpg" alt="Photo of Daniel" class="profile-photo">
   </div>
 
   <!-- SIDEBAR -->
   <div class="sidebar">
     <div class="sidebar-tab">MENU</div>
-
     <a href="#">Resume</a>
     <a href="#">Interests</a>
     <a href="#">Hobbies</a>

@@ -5,20 +5,21 @@
   <title>Daniel Tochimani-Hernandez</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Load real Times New Roman -->
+  <!-- Load real Times New Roman web font -->
   <link href="https://fonts.cdnfonts.com/css/times-new-roman" rel="stylesheet">
 
   <style>
-    html, body {
+    /* Force Times New Roman everywhere, including GitHub Pages markdown wrapper */
+    html, body, h1, h2, p, a, div, .markdown-body {
+      font-family: "Times New Roman", Times, serif !important;
       margin: 0;
-      background: black;
+      padding: 0;
       color: #f2f2f2;
-      display: flex;
-      font-family: "Times New Roman";
     }
 
-    h1, h2, p, a, div {
-      font-family: "Times New Roman", serif;
+    body {
+      background: black;
+      display: flex;
     }
 
     /* MAIN CONTENT */
@@ -99,7 +100,7 @@
 <body>
 
   <!-- MAIN CONTENT -->
-  <div class="main">
+  <div class="main markdown-body">
     <h1>Daniel Tochimani-Hernandez</h1>
     <p><strong>Economics</strong></p>
 
@@ -114,6 +115,7 @@
       to the variance evident in public health disparities.
     </p>
 
+    <!-- PROFILE PHOTO -->
     <img src="profilepic.jpg" alt="Photo of Daniel" class="profile-photo">
   </div>
 

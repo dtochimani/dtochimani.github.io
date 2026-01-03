@@ -1,3 +1,3 @@
 # dtochimani.github.io
-Personal Website
+Daniel Tochimani-Hernandez Personal Website
 Please visit: https://dtochimani.github.io/

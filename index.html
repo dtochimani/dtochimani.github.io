@@ -1,57 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF=8">
+  <meta charset="UTF-8">
   <title>Daniel Tochimani-Hernandez</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-  body {
-  font-family: Arial, sans-serif;
-  background: #f7f7f7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  }
-  .card {
-  background: white;
-  padding: 40px;
-  max-width: 500px;
-  border-radius: 12px;
-  box-shadow; 0 10px 25px rgba(0,0,0,0.1);
-  text-align: center;
-  }
-  button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  background: black;
-  color: white;
-  cursor: pointer;
-  margin-top: 20px;
-  }
-  button:hover {
-  background: #333;
-  }
-  button:hover {
-  background: #333;
-  }
-</style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      display: flex;
+    }
+
+    /* MAIN CONTENT */
+    .main {
+      padding: 60px;
+      max-width: 800px;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      right: -220px;
+      width: 220px;
+      height: 100vh;
+      background: #111;
+      color: white;
+      transition: right 0.3s ease;
+      padding-top: 60px;
+    }
+
+    .sidebar:hover {
+      right: 0;
+    }
+
+    .sidebar-tab {
+      position: absolute;
+      left: -60px;
+      top: 100px;
+      width: 60px;
+      height: 120px;
+      background: #111;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      writing-mode: vertical-rl;
+      cursor: pointer;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 15px 30px;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .sidebar a:hover {
+      background: #333;
+    }
+  </style>
 </head>
-  <body>
+<body>
 
-    <div class="card">
-      <h1>Daniel Tochimani-Hernandez</h1>
-      <p>
-        Economics Research. Capital Markets & Health Economics.<br>
-        Building tools
-      </p>
+  <!-- MAIN PAGE -->
+  <div class="main">
+    <h1>Daniel Tochimani-Hernandez</h1>
+    <p><strong>Economics Research. Capital Markets & Health Economics.</strong></p>
 
-      <button onclick="window.location.href='login.html'">
-        Enter
-      </button>
-    </div>
+    <p>
+      I study how incentives, institutions, and capital shape outcomes in
+      markets and public systems. My work spans economic research, finance,
+      and applied tools for understanding capital allocation.
+    </p>
 
-  </body>
+    <h2>Resume</h2>
+    <p>
+      Harvard University — Economics<br>
+      Research Assistant, Capital Markets & Health Economics<br>
+      Experience in private equity, banking, and policy research
+    </p>
+  </div>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="sidebar-tab">MENU</div>
+
+    <a href="#">Resume</a>
+    <a href="#">Interests</a>
+    <a href="#">Hobbies</a>
+    <a href="#">About Me</a>
+    <a href="login.html">Enter</a>
+  </div>
+
+</body>
 </html>
-  

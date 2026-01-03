@@ -9,6 +9,7 @@
   <link href="https://fonts.cdnfonts.com/css/times-new-roman" rel="stylesheet">
 
   <style>
+    /* Global styles */
     html, body {
       margin: 0;
       padding: 0;
@@ -63,24 +64,71 @@
     .contact-info p {
       margin: 5px 0;
     }
-    
+
+    /* SIDEBAR */
+    .sidebar {
+      position: fixed;       
+      top: 0;
+      right: -220px;         
+      width: 220px;
+      height: 100vh;         
+      background: #111;
+      color: white;
+      transition: right 0.3s ease;
+      padding-top: 60px;
+      z-index: 1000;         
+    }
+
+    .sidebar:hover {
+      right: 0;              
+    }
+
+    .sidebar-tab {
+      position: absolute;
+      left: -60px;           
+      top: 100px;            
+      width: 60px;
+      height: 120px;
+      background: #111;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      writing-mode: vertical-rl;
+      cursor: pointer;
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 15px 30px;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .sidebar a:hover {
+      background: #333;
+    }
   </style>
 </head>
 
 <body>
 
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="sidebar-tab">MENU</div>
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="#">Interests</a>
+    <a href="hobbies.html">Hobbies</a>
+    <a href="login.html">Enter</a>
+  </div>
+
+  <!-- MAIN CONTENT -->
   <div class="container">
-    
-    <!-- SIDEBAR -->
-<div class="sidebar">
-  <div class="sidebar-tab">MENU</div>
-  <a href="index.html">Home</a>
-  <a href="resume.html">Resume</a>
-  <a href="#">Interests</a>
-  <a href="hobbies.html">Hobbies</a>
-  <a href="login.html">Enter</a>
-</div>
-    <!-- Header -->
+
     <h1>Daniel Tochimani-Hernandez</h1>
 
     <!-- Contact Info -->
@@ -155,7 +203,7 @@
     <h3>Cornerstone Research First-Year Foundations</h3>
     <p>(San Francisco, CA) — Participant, May 2023 – June 2023</p>
 
-    <!-- More Information -->
+    <!-- Additional Information -->
     <h2>Additional Information</h2>
     <p><strong>Languages:</strong> English, Spanish</p>
     <p><strong>Technology:</strong> Microsoft Word, Excel, PowerPoint, Stata, MATLAB, PowerBI, R, WordPress, Python, Interface, Google Sheets, Alteryx, SQL, PowerApps</p>

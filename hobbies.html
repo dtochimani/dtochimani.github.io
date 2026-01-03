@@ -1,2 +1,90 @@
-<!DOCTYPE>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hobbies</title>
+  <meta name="viewport" content="width=device-width, initital-scale=1">
 
+  <!-- Times New Roman-->
+  <link href="https://fonts.cdnfonts.com/css/times-new-roman" rel="stylesheet">
+
+  <style>
+    html, body, h1, h2, p, a, div, .markdown-body {
+      font-family: "Times New Roman", Times, serif !important;
+      margin: 0;
+      padding: 0;
+      color: #f2f2f2;
+    }
+
+    body {
+      background: black; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .main {
+      background: rgba(121,140,228,0.8);
+      padding: 60px;
+      max-width: 1000px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      right: -220px;
+      width: 220px;
+      height: 100vh;
+      background: #111;
+      color: white;
+      transition: right 0.3s ease;
+      padding-top: 60px;
+    }
+
+    .sidebar:hover {
+      right: 0;
+    }
+
+    .sidebar-tab {
+      position: absolute;
+      left: -60px;
+      top: 100px;
+      width: 60px;
+      height: 120px;
+      background: #111;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      writing-mode: vertical-rl;
+      cursor: pointer;
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 15px 30px;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .sidebar a:hover {
+      background: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="main markdown-body">
+    <h1> Magic: The Gathering</h1>
+    <p>My current commander is Alela, Cunning Conqueror, and her core strategy revolves around mass-producing Faerie tokens and using them to goad opponents into combat. Outside of Commander, I also really enjoy drafting and attending prerelease events with friends. What I love most is the sense of community, playing alongside people who constantly introduce me to new ideas and perspectives, ranging from real estate to biostatistics.
+    </p>
+    
+</body>
+</html>
+  

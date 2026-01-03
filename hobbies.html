@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Hobbies</title>
-  <meta name="viewport" content="width=device-width, initital-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Times New Roman-->
+  <!-- Times New Roman -->
   <link href="https://fonts.cdnfonts.com/css/times-new-roman" rel="stylesheet">
 
   <style>
@@ -26,10 +26,32 @@
 
     .main {
       background: rgba(121,140,228,0.8);
-      padding: 60px;
+      padding: 40px;
       max-width: 1000px;
       border-radius: 12px;
       box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    /* Text and image layout */
+    .hobby-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .hobby-container img {
+      width: 250px; /* adjust size as needed */
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .hobby-text {
+      flex: 1;
+      font-size: 16px;
+      line-height: 1.6;
     }
 
     /* SIDEBAR */
@@ -81,10 +103,15 @@
 </head>
 <body>
   <div class="main markdown-body">
-    <h1> Magic: The Gathering</h1>
-    <p>My current commander is Alela, Cunning Conqueror, and her core strategy revolves around mass-producing Faerie tokens and using them to goad opponents into combat. Outside of Commander, I also really enjoy drafting and attending prerelease events with friends. What I love most is the sense of community, playing alongside people who constantly introduce me to new ideas and perspectives, ranging from real estate to biostatistics.
-    </p>
+    <h1>Magic: The Gathering</h1>
     
+    <div class="hobby-container">
+      <img src="alela.jpg" alt="Alela, Cunning Conqueror">
+      <div class="hobby-text">
+        <p>My current commander is <strong>Alela, Cunning Conqueror</strong>, and her core strategy revolves around mass-producing Faerie tokens and using them to goad opponents into combat. Outside of Commander, I also really enjoy drafting and attending prerelease events with friends. What I love most is the sense of community, playing alongside people who constantly introduce me to new ideas and perspectives, ranging from real estate to biostatistics.</p>
+      </div>
+    </div>
+
+  </div>
 </body>
 </html>
-  
